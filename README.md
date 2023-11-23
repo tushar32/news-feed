@@ -23,9 +23,10 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 
-### `Running app in Docker`
+### `Running app in Docker: npm run dev`
 
 Start the docker demaon - windows ( Docker Desktop)
+
 Execute this command to run app in docker container 
 
 Ensure the image is available.
