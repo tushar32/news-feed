@@ -17,7 +17,7 @@ const NewsFeedItem = ({article, currentNFSource}) => {
     
     return (
         <Col sm className="news_feed">
-            <Card style={{ width: '18rem' }}>
+            <Card>
                 <Card.Img variant="top" src={siteImageUrl+imageToUrl} height="300" className="news_feed__image"/>
                 <Card.Body>
                     <Card.Title>{title.substring(0,40)}...</Card.Title>

@@ -11,13 +11,13 @@ const NewsFeed = () => {
     const [ filters, setFilters ] = useState({ searchQ:'', date: null, currentNFSource: Object.keys(NEWS_FEED_META)[0]})
     const { list, loading}  = UseNewsFeed(filters)
       
-    const memoizedList = useMemo(() => list,[loading, filters.currentNFSource])
+
     /* only  render news feed list when actaual api calls */
     const renderProducts = useCallback(() => (
         <>
-            { memoizedList.length > 0 ? 
+            { list.length > 0 ? 
                 <Row xs={1} md={4} className="g-4"> 
-                    { memoizedList.map(article => {
+                    { list.map(article => {
                         return  (
                             <NewsFeedItem article={article} key={uuidv4() }  currentNFSource={filters.currentNFSource} />
                         )})
