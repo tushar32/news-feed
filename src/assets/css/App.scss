@@ -25,4 +25,11 @@
       color: #fff
     }
   }
+
+  img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+  }
    
+  @import './NewsFeedItem.scss'
